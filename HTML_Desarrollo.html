@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+        }
+        th,td {
+            border: 1px solid;
+            border-color: black;
+            padding: 5px;
+            text-align: center;
+        }
+        tfoot {
+            background-color:rgb(71, 76, 83);
+        }
+        a {
+            padding: 8px;
+        }
+        h1 {
+            text-align: center;
+        }
+        header,footer {
+            background-color: rgb(130, 139, 137);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header id="inicio">
+        <h1>HTML</h1>
+        <nav>
+           <a href="#estructura">Ir a Estructura Básica del Documento HTML</a><a href="#encabezados">Ir a Encabezados y Propiedades del Texto</a><a href="#divisiones">Ir a Divisiones y Agrupación de Contenido</a><a href="#elementos">Ir a Elementos Multimedia</a><a href="#tablas">Ir a Tablas</a><a href="#formularios">Ir a Formularios</a><a href="#enlaces">Ir a Enlaces y divisiones</a>
+        </nav>
+    </header>
+    <main>
+        <section id="estructura">
+            <h2>1. Estructura Básica del Documento HTML</h2>
+            <p>Este documento HTML tiene una estructura básica
+                que incluye la declaración de DOCTYPE, etiquetas
+                de metadatos y un título.
+            </p>
+        </section>
+
+        <section id="encabezados">
+            <h2>2. Encabezados y Propiedades del Texto</h2>
+            <p><b>Este es un texto en negrita</b><br>
+                <em>Este es un texto en cursiva.</em><br>
+                <u>Este es un texto subrayado.</u><br>
+                <mark>Este es un texto resaltado.</mark></p>
+        </section>
+        <section id="divisiones">
+            <h2>3. Divisiones y Agrupación de Contenido</h2>
+            <div><h3>Sección 1</h3><p>Contenido de la primera sección agrupada en un section.</p></div>
+            <div><h3>Sección 2</h3><p>Contenido de la segunda sección agrupada en un section.</p></div>
+        </section>
+        <section>
+            <h2 id="enlaces">4. Enlaces y Listas</h2>
+            <div>
+                <p>Visitá la web de la Facultad Regional Mendoza en el siguiente <a href="https://www4.frm.utn.edu.ar/" target="_blank">enlace.</a></p>
+            </div>
+            <div>
+                <h3>Enlaces internos</h3>
+                <ul>
+                    <li><a href="#estructura">Ir a Estructura Básica del Documento HTML</a></li>
+                    <li><a href="#encabezados">Ir a Encabezados y Propiedades del Texto</a></li>
+                    <li><a href="#divisiones">Ir a Divisiones y Agrupación de Contenido</a></li>
+                    <li><a href="#enlaces">Ir a Enlaces y Divisiones</a></li>
+                    <li><a href="#elementos">Ir a Elementos Multimedia</a></li>
+                    <li><a href="#tablas">Ir a Tablas</a></li>
+                    <li><a href="#formularios">Ir a Formularios</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Lista desordenada</h3>
+                <ul>
+                    <li>Primer ítem de una lista desordenada</li>
+                    <li>Segundo ítem de una lista desordenada</li>
+                    <li>Tercer ítem de una lista desordenada</li>
+                </ul>
+                <h3>Lista ordenada</h3>
+                <ol>
+                    <li>Primer ítem de una lista ordenada</li>
+                    <li>Segundo ítem de una lista ordenada</li>
+                    <li>Tercer ítem de una lista ordenada</li>
+                </ol>
+            </div>
+        </section>
+        <section>
+            <h2 id="elementos">5. Elementos Multimedia</h2>
+            <div>
+                <figure>
+                    <img 
+            src="https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen-930x487.jpg"
+            width="250px"
+            height="250px"
+            alt="Esta es una imagen"
+            >
+                    <figcaption>Esta es una imagen</figcaption>
+                </figure>
+                            </div>
+            <div>
+                <video 
+            src="https://video-previews.elements.envatousercontent.com/5b3b6876-9689-4cfe-9692-1cf061a156f6/watermarked_preview/watermarked_preview.mp4"
+            width="250px"
+            height="250px"
+            controls
+            >
+            </div>
+            <div>
+                <audio
+            src="https://download.blender.org/peach/trailer/trailer_1080p.ogg"
+            controls
+            >
+            </div>
+        </section>
+        <section>
+            <h2 id="tablas">6. Tablas</h2>  
+            <table>
+                <thead>
+                    <tr>
+                        <th>Columna 1</th>
+                        <th>Columna 2</th>
+                        <th>Columna 3</th>
+                        <th>Columna 4</th>
+                    </tr>              
+                </thead>
+                <body>
+                    <tr>
+                        <td>Fila 1, Columna 1</td>
+                        <td>Fila 1, Columna 2</td>
+                        <td>Fila 1, Columna 3</td>
+                        <td>Fila 1, Columna 4</td>
+                    </tr>
+                    <tr>
+                        <td>Fila 2, Columna 1</td>
+                        <td>Fila 2, Columna 2</td>
+                        <td>Fila 2, Columna 3</td>
+                        <td>Fila 2, Columna 4</td>
+                    </tr>
+                </body>
+                <tfoot>
+                    <tr>
+                        <th>Total 1</th>
+                        <th>Total 2</th>
+                        <th>Total 3</th>
+                        <th>Total 4</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section>
+            <h2 id="formularios">7. Formularios</h2>
+            <form>
+                <fieldset>
+                    <label>Apellidos </label>
+                <input type="text" placeholder="">
+                <label>Nombres </label>
+                <input type="text" placeholder="">
+                <label>Fecha de Nacimiento </label>
+                <input type="date">
+                <label>Email </label>
+                <input type="email" placeholder="tunombre@dominio.com">
+                <label>Mensaje </label>
+                <textarea placeholder="Tu mensaje"></textarea>
+                </fieldset>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <a href="#inicio">Volver al inicio</a>
+    </footer>
+
+
+</body>
+</html>
